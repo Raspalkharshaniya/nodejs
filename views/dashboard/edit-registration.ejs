@@ -1,0 +1,138 @@
+
+
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../assets/image/main12.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 950px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+
+        }
+
+        .login-box {
+            width: 40%;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 20px;
+            height: auto;
+            margin-top: 200px;
+
+
+
+        }
+
+        .login-box h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            font-weight: 500;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: whitesmoke;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid whitesmoke;
+            color: whitesmoke;
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .submit button {
+            display: block;
+            width: 90%;
+            margin-top: 40px;
+            margin-left: 20px;
+            padding: 10px;
+            color: black;
+            background-color: wheat;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit button:hover {
+            background-color: gray;
+        }
+    </style>
+
+    <body>
+
+
+        <!-------------------------------- <registration  start> ---------------------------->
+        <div class="container">
+            <div class="login-box"data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <h2>REGISTRATION</h2>
+                <form method="post" >
+                    <div class="form-group">
+                        <label for="username">First Name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" value="<%=editdata.firstname %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" value="<%=editdata.lastname %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Email-id</label>
+                        <input type="text" id="email" name="email" placeholder="Enter your Email-id" value="<%=editdata.email %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Mobile-No</label>
+                        <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" value="<%=editdata.mobile %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Create your password" value="<%=editdata.password %>">
+                    </div>
+                    <div class="submit">
+                        <button type="submit" >SUBMIT</button>
+                    </div>
+                    <div class="login text-light py-2 px-4 ">
+                        <p>Already have an account? <a href="/login">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-------------------------------- <registration end> ---------------------------->
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

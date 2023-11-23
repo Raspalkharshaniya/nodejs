@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>footer</title>
+</head>
+
+<style>
+  .contrainerbox {
+    max-width: 1170px;
+    margin: auto;
+  }
+
+  .footer {
+    background-color: #212529;
+    padding: 70px 0;
+    margin-top: 150px;
+  }
+
+  .footer-row {
+
+
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+  }
+
+  .footer-col h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 80px;
+
+  }
+
+  .footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 10;
+    bottom: -10px;
+    background-color: yellow;
+    height: 2px;
+    box-sizing: border-box;
+    width: 90px;
+
+
+  }
+
+  .footer-col ul {
+    list-style: none;
+    padding-left: 100px;
+  }
+
+  .footer-col ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+  }
+
+  .footer-col ul li a:hover {
+    color: white;
+    padding-left: 6px;
+
+  }
+
+  @media(max-width:767px) {
+    .footer-col {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+
+
+  @media(max-width:567px) {
+    .footer-col {
+      width: 100%;
+
+    }
+  }
+
+  .social-link {
+    padding-left: 30px;
+  }
+
+  /*<footer end>  */
+</style>
+
+<body>
+
+  <!--------------------------- < footer start> ------------------------------>
+
+  <div class="footer">
+    <div class="containerbox">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4 data-aos="fade-up"
+          data-aos-duration="3000">World-Wide</h4>
+          <ul data-aos="fade-up"
+          data-aos-duration="3000">
+            <li><a href="/world">World packages</a></li>
+            <li><a href="/india">India Packages</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-aos="fade-up"
+          data-aos-duration="3000">India Packages</h4>
+          <ul data-aos="fade-up"
+          data-aos-duration="3000">
+            <li><a href="/india">Mumbai</a></li>
+            <li><a href="/india">Bangluru</a></li>
+            <li><a href="/india">Chennai</a></li>
+            <li><a href="/india">Delhi</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-aos="fade-up"
+          data-aos-duration="3000">World packages</h4>
+          <ul data-aos="fade-up"
+          data-aos-duration="3000">
+            <li><a href="/world">Switzerland</a></li>
+            <li><a href="/world">New-Zealand</a></li>
+            <li><a href="/world">Canada</a></li>
+            <li><a href="/world">Dubai</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-aos="fade-up"
+          data-aos-duration="3000">Follow Us</h4>
+          <div class="social-link"data-aos="fade-up"
+          data-aos-duration="3000">
+            <a href="https://www.facebook.com/Dizifire/"><img src="assets/image/diziface.png"></a>
+            <a href="https://instagram.com/parth_kharshaniya?igshid=Y2IzZGU1MTFhOQ=="><img src="assets/image/diziinsta.png"></a>
+            <a href="https://twitter.com/DiziFireCorp"><img src="assets/image/dizitwitter.png"></a>
+            <a href="https://www.youtube.com/@cardrifter"><img src="assets/image/diziyoutube.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--------------------------------------- < footer end > -------------------------------------------->
+</body>
+
+</html>

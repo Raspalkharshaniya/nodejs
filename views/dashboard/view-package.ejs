@@ -1,0 +1,56 @@
+<%- include('./header.ejs')%>
+
+<style>
+  img{
+    width: 100px;
+    height: 100px;
+  }
+</style>
+
+
+ <div class="container-fluid">
+    <div class="row">
+
+    
+        <div class="col-sm-12 col-md-3 col-lg-2 p-0">
+            <%- include('./left.ejs')%>
+        </div>
+
+        <div class="col-sm-12 col-md-9 col-lg-10 " style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+          <% if(packgedata.length>0){ %>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Package Name</th>
+              <th>Package Description</th>
+              <th>Price</th>
+              <th>Package Image</th>
+             
+             
+            </tr>
+          </thead>
+          <tbody>
+            <%for(var i=0; i<packgedata.length; i++){%>
+            <tr>
+              <td><%= packgedata[i].packagename %></td>
+              <td><%= packgedata[i].packagedescription %></td>
+              <td><%= packgedata[i].price %></td>
+              <td><img src="http://localhost:8080/upload/<%= packgedata[i].fileupload %>"></td>
+              
+
+              <td><a href="/edit-package/<%= packgedata[i]._id %>" class="btn btn-primary">Edit</a>&nbsp;&nbsp;
+                <a href="/delete_2/<%= packgedata[i]._id %>" class="btn btn-danger">Delete</a></td>
+             
+              
+            </tr>
+            <% } %>
+          </tbody>
+          </table>
+          <% } else { %>
+            no record found 
+
+            <%} %>
+      </div>
+
+    </div>
+</div>

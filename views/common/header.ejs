@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WorldWide</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+<style>
+  .header {
+    background-color: rgba(85, 84, 84, 0.382);
+
+  }
+
+  .head a {
+
+    text-decoration: none;
+    color: black;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0px 10px;
+    font-weight: 600;
+
+  }
+
+  .head a:hover,
+  .head a.active {
+
+    background: black;
+    color: #fff;
+  }
+
+  button {
+    width: 100%;
+    border-radius: 20px;
+    background-color: transparent;
+    /* Adjust padding as needed */
+
+    border: none;
+    /* Remove border if desired */
+    cursor: pointer;
+  }
+
+  /* Add any additional styles for the link if needed */
+  a.nav-link {
+
+    text-decoration: none;
+
+  }
+
+  a.nav-link:hover {
+    text-decoration: none;
+
+  }
+</style>
+
+<body>
+
+
+  <!-------------------------------- <header  start> ---------------------------->
+  <section>
+    <header>
+      <nav class="navbar navbar-expand-lg header px-4 fixed-top "data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
+        <div class="container-fluid">
+          <a class="navbar-brand logo  p-0" href="/"data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500">
+            <img src="assets/image/logo3.png" width="100%" height="70px"></a>
+          <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4 text-center"data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+
+              <li class="nav-item head pe-5 pt-4">
+                <a class="nav-link   " aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item head pe-3 pt-4">
+                <a class="nav-link " href="/about">About</a>
+              </li>
+
+              <!-- <li class="nav-item head pe-5 pt-4">
+          <a class="nav-link " href="/packages">Packages</a>
+        </li> -->
+
+
+              <div class="dropdown">
+                <button class="btn btn-lg dropdown-toggle mt-4 me-5 te" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false" style="font-weight: 700; color: black;">
+                  Packages
+                </button>
+                <ul class="dropdown-menu bg-secondary text-center text-white">
+                  <li><a class="dropdown-item" href="/india">India Tourism</a></li>
+                  <li><a class="dropdown-item" href="/world">World Tourism</a></li>
+
+                </ul>
+              </div>
+
+
+              <li class="nav-item head pe-5 me-5 pt-4">
+                <a class="nav-link " href="/contact">Contact</a>
+              </li>
+
+<!--               
+              <li class="nav-item head pe-5 me-5 pt-4">
+                <a class="nav-link " href="/cart">Cart</a>
+              </li> -->
+
+              <li class="nav-item pe-3 pt-3 mb-3">
+                <button><a class="nav-link " href="/registration"><img src="assets/image/login.png" alt=""
+                      height="40px"></a></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </section>
+
+  <!------------------------------- <header end > ----------------------------->
+
+   
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

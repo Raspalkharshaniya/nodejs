@@ -1,0 +1,50 @@
+<%- include('./header.ejs')%>
+
+
+
+
+ <div class="container-fluid">
+    <div class="row">
+
+    
+        <div class="col-sm-12 col-md-3 col-lg-2 p-0">
+            <%- include('./left.ejs')%>
+        </div>
+
+        <div class="col-sm-12 col-md-9 col-lg-10 " style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+          <% if(cntctdata.length>0){ %>
+        <table class="table">
+          <thead>
+            <tr>
+              <th> Name</th>
+              <th> Email</th>
+              <th>Message</th>
+            
+             
+             
+            </tr>
+          </thead>
+          <tbody>
+            <%for(var i=0; i<cntctdata.length; i++){%>
+            <tr>
+              <td><%= cntctdata[i].name %></td>
+              <td><%= cntctdata[i].email %></td>
+              <td><%= cntctdata[i].message %></td>
+            
+              
+
+             
+             
+              
+            </tr>
+            <% } %>
+          </tbody>
+          </table>
+          <% } else { %>
+            no record found 
+
+            <%} %>
+      </div>
+
+    </div>
+</div>

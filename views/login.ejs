@@ -1,0 +1,121 @@
+<!-- HEADER -->
+
+<%- include('common/header.ejs') %>
+    <!-- HEADER SECTTION END -->
+
+
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(assets/image/main8.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 950px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+
+        }
+
+        .login-box {
+            width: 40%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 20px;
+            height: auto;
+            margin-top: 150px;
+            box-shadow: 0 0 60px rgba(0, 0, 0, 0.9);
+
+
+        }
+
+        .login-box h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            font-weight: 500;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: whitesmoke;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid whitesmoke;
+            color: whitesmoke;
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .submit button {
+            display: block;
+            width: 40%;
+            margin-top: 50px;
+            margin-left: 130px;
+            padding: 10px;
+            color: black;
+            background-color: wheat;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit button:hover {
+            background-color: gray;
+        }
+    </style>
+
+    <body>
+
+
+        <!-------------------------------- <login  start> ---------------------------->
+        <div class="container">
+            <div class="login-box"data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+                <h2>LOG IN</h2>
+                <form method="post" action="/login">
+                    <div class="form-group">
+
+                        <!-- <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                        </div> -->
+                        <div class="form-group">
+                            <label for="username">Email-id</label>
+                            <input type="email" id="email" name="email"
+                                placeholder="Enter your Email-id" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password"
+                                required>
+                        </div>
+                        <div class="submit">
+                            <button type="submit" name="submit">LOGIN</button>
+                        </div>
+
+                </form>
+            </div>
+        </div>
+
+        <!-------------------------------- <logiun end> ---------------------------->
+
+
+
+
+    </body>
+
+    
+
+  
